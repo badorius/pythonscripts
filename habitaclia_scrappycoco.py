@@ -7,7 +7,10 @@ web_html = web_data.read()
 web_data.close()
 page_soup = soup(web_html, 'html.parser')
 
-print(page_soup)
+#print(page_soup.h3)
+
+soup.find_all("section", {"class": "list-items"})
+
 
 #print(page_soup.find_all('table', {'class': 'list-items'}))
 #print(page_soup.find_all('table', {'class': 'list-items'}))
